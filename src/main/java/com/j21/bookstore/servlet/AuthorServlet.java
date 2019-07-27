@@ -21,6 +21,6 @@ public class AuthorServlet extends HttpServlet {
         List<Author> authors = dao.findAll(Author.class);
 
         req.setAttribute("items", authors);
-        req.getRequestDispatcher("/author/list.jsp").forward(req, resp);
+        req.getRequestDispatcher("/author/list2.jsp").forward(req, resp);
     }
 }

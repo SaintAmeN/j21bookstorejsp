@@ -26,10 +26,10 @@
     </tr>
     <c:forEach items="${items}" var="item">
         <tr>
-            <td><c:out value="${item.getName()}"/> </td>
-            <td><c:out value="${item.getSurname()}"/> </td>
-            <td><c:out value="${item.getYearOfBirth()}"/> </td>
-            <td><c:out value="${item.getPlaceOfBirth()}"/> </td>
+            <td>${item.getName()}</td>
+            <td>${item.getSurname()}</td>
+            <td>${item.getYearOfBirth()}</td>
+            <td>${item.getPlaceOfBirth()}</td>
         </tr>
     </c:forEach>
 </table>
