@@ -11,7 +11,9 @@
     <title>Index page</title>
 </head>
 <body>
-<jsp:include page="header.jsp"></jsp:include>
+<%--<jsp:include page="header.jsp"></jsp:include>--%>
+<%@include file="header.jsp"%>
+<%= wypiszPasekNawigacyjny("http://google.com", "google") %>
 
 </body>
 </html>

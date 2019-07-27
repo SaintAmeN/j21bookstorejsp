@@ -21,6 +21,7 @@ public class BookAddServlet extends HttpServlet {
         req.setAttribute("authors", dao.findAll(Author.class));
         req.setAttribute("publishers", dao.findAll(Publisher.class));
 
+        // ustaw atrybut (to co jest do wyświetlenia)
         req.getRequestDispatcher("/book/form.jsp").forward(req, resp);
     }
 

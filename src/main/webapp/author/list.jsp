@@ -12,7 +12,8 @@
     <title>Author list</title>
 </head>
 <body>
-<jsp:include page="/header.jsp"></jsp:include>
+<%@include file="/header.jsp"%>
+<%= wypiszPasekNawigacyjny() %>
 
 <a href="/author/add">Add new Author</a>
 
